@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy" rel="stylesheet"> 
+ 
+</head>
+<body>
+  <h1>Cifrado Cesar</h1>
+  <p>En esta aplicación podras cifrar y descifrar mensajes, a través del codigo cesar.</p>
+  
+  <!--Cifrado-->
+<div class="codigo">
+<div class="cif">
+  <input type="number" id="desplazar" min="1">
+  <textarea id="message_cif" rows="10" cols="40">Escribe tu mensaje</textarea>
+  <button class="boton" id="cifrar">Cifrar</button>
+  <p id="respuesta1" style="resp1"></p>
+
+</div>
+
+  <!--Descifrado-->
+<div class="des">
+  <input type="number" id="desplazarDes" min="1">
+  <textarea id= "message_des" rows="10" cols="40"> Escribe tu mensaje</textarea>
+  <button class="boton" id="descifrar">Descifrar</button>
+  <p id="respuesta2"></p>
+</div>
+</div>
+
+  <div id="root">
+  </div>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
